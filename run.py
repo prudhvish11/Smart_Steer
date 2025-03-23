@@ -19,7 +19,7 @@ rows,cols = img.shape
 
 smoothed_angle = 0
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 while(cv2.waitKey(10) != ord('q')):
     ret, frame = cap.read()
     image = cv2.resize(frame, (200, 66)) / 255.0
